@@ -1,0 +1,255 @@
+
+html {
+    background-color: #f2f2f2;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+header a,
+main a,
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+.sed-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-navigation li {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 239px;
+    padding: 15px 0px;
+    margin: 0px;
+}
+
+.main-navigation li:nth-of-type(1) {
+    padding-left: 9px;
+}
+
+.main-navigation li:nth-of-type(2) {
+    padding-left: 12px;
+}
+
+.main-navigation li:nth-of-type(3) {
+    width: 244px;
+}
+
+.main-navigation li:nth-of-type(4) {
+    padding-left: 9px;
+}
+
+.main-navigation li:nth-of-type(5) {
+    padding-left: 18px;
+}
+
+.main-navigation a {
+    display: block;
+    width: 219px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    color: #81b3d2;
+}
+
+.main-navigation a:active {
+    color: #b3b3b3;
+}
+
+.welcome {
+    background-color: #dfebf4;
+    background-image: url(../img/bg-index.jpg);
+    background-position: 0 -56px;
+    background-size: auto;
+    position: relative;
+    padding-bottom: 64px;
+}
+
+.welcome::before {
+    content: url('../img/layer-9.png');
+    position: absolute;
+    top: 134px;
+    margin-left: 472px;
+}
+
+.welcome:after{
+    content: '';
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/mask.png');
+}
+.welcome p {
+    text-align: center;
+    margin: 0px;
+}
+
+.welcome p:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+
+.welcome-line {
+    padding-top: 76px;
+    padding-bottom: 0px;
+}
+
+.gorgeous-line {
+    padding-top: 9px;
+}
+
+.sedona-line {
+    padding-top: 49px;
+}
+
+.sucks-line {
+    padding-top: 53px;
+    padding-bottom: 13px;
+}
+
+.reasons {
+    text-align: center;
+    margin: 0px;
+}
+
+.reasons p {
+    width: 492px;
+    margin: 0px auto;
+}
+
+.reasons p:nth-child(2n) {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    padding-top: 58px;
+}
+
+.reasons p:nth-child(3n) {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    padding-top: 26px;
+    padding-bottom: 52px;
+}
+
+.reservation {
+    text-align: center;
+    padding-top: 48px;
+}
+
+.reservation b {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.reservation p {
+    width: 435px;
+    padding-top: 20px;
+    margin: 0 auto;
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.reservation-button {
+    margin-top: 47px;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 568px;
+    height: 86px;
+    background-color: #766357;
+    border: 0px solid white;
+}
+
+.reservation-button:hover,
+.reservation-button:focus {
+    background-color: #604e43;
+}
+
+.reservation-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
+}
+
+.block-advantage {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.block-advantage li p {
+    background-color: #81b3d2;
+    width: 256px;
+    height: 256px;
+}
+ul li em {
+    width: 256px;
+    height: 256px;
+}
