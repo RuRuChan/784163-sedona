@@ -82,17 +82,17 @@
                         </div>
                             
                     </div>
-                    <div class="advantage-item advantage-item_small">
+                    <div class="advantage-item advantage-item_small advantage-item_small_background">
                         <h4 class="advantage-item-title">Небольшая площадь</h4>
                         <span class="advantage-item-num">№3</span>
                         <p class="advantage-item-desc">Все достопримечательности находятся очень близко</p>
                     </div>
-                    <div class="advantage-item advantage-item_small">
+                    <div class="advantage-item advantage-item_small advantage-item_small_background">
                         <h4 class="advantage-item-title">Красивая дорога</h4>
                         <span class="advantage-item-num">№4</span>
                         <p class="advantage-item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </div>
-                    <div class="advantage-item advantage-item_small">
+                    <div class="advantage-item advantage-item_small advantage-item_small_background">
                         <h4 class="advantage-item-title">Мало туристов</h4>
                         <span class="advantage-item-num">№5</span>
                         <p class="advantage-item-desc">Большинство едет в Гранд каньон и толпится там</p>
@@ -100,21 +100,7 @@
                 </div>
             </div>
         </div>
-        <div class="block-advantage"><ol>
-            <li><p class="best-advantage1"><!--<img src="img/layer-13.png">--><h3>НАСТОЯЩИЙ<br>ГОРОДОК</h3>СЕДОНА – НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p></li>
-            <li><p class="best-advantage2"><!--<img src="img/layer-14.png">--><h3>ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ, КОНЕЧНО, ВЫ ОСМЕЛИТЕСЬ.</p></li>
-            <li><p><h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p></li>
-            <li><p><h3>КРАСИВАЯ ДОРОГА</h3>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p></li>
-            <li><p><h3>МАЛО ТУРИСТОВ</h3>БОЛЬШИНСТВО ЕДЕТ В ГРАНД-КАНЬОН И ТОЛПИТСЯ ТАМ</p></li>
-        </ol>
         
-        <h2 class="visually-hidden">обратите внимание</h2> <!--сделать скрытым-->
-        <ul>
-            <li><em>ЖИЛЬЕ</em>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</li>
-            <li><em>ЕДА</em>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕНЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</li>
-            <li><em>СУВЕНИРЫ</em>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗОВОДСТВА!</li>
-        </ul>
-    </div>
 </section>
 
 
@@ -151,6 +137,7 @@
 
 <button type="button">НАЙТИ</button>
 </p>
+<div class="area-map" id="map"></div>
 </main>
 <footer>
     <!--социальные кнопки и производитель-->
@@ -168,5 +155,9 @@
             <a class="button" href="https://htmlacademy.ru">HTML Academy</a></p>
         </div>
     </footer>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-RE146HE9qaZPTWFkpOFXEtZiO9rBbJw&callback=initMap">
+    </script>
+<script src="js/script.js"></script>
 </body>
 </html>
