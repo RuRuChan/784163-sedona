@@ -3,35 +3,36 @@
   <head>
      <title>Sedona</title>
      <meta charset="utf-8">
+     <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
-	<header>
-	 	<nav>
-	  	  <ul>
-	  	  	<li><a href="1">информация</a></li>
-	  	  	<li><a href="2">фото и видео</a></li>
-	  	  	<li><a href="3">карта штата</a></li>
-	  	  	<li><a href="4">гостиницы</a></li>
-	  	  </ul>
-	  	</nav>
-	  	<img src="\cityofsedona.jpg">
+	<header class='main-header'>
+        <nav class='main-navigation'>
+            <ul>
+                <li><a href="1">информация</a></li>
+                <li><a href="2">фото и видео</a></li>
+                <li><a href="3">карта штата</a></li>
+                <li><a href="4">гостиницы</a></li>
+            </ul>
+        </nav>
+	  	<img class='sed-logo' src="img/sed-logo.png">
 	</header>
 	<main>
 		<!--тут нужно сделать таблицу с чекбоксами, или же список с чекбоксами или же абзац с чекбоксами, я не знаю как-->
-		<section>
-		 <form>
+		<section class="select-feature">
+		 <form class="select-feature_garth">
 		  <h2>ИНФРАСТУКТУРА</h2>
-	      <input type="checkbox" name="БАССЕЙН">
-	      <input type="checkbox" name="ПАРКОВКА">
-	      <input type="checkbox" name="WI-FI">
-	     </form>
-	     <form>
+		  <label>БАССЕЙН<input type="checkbox" name="БАССЕЙН"></label>
+	      <label>ПАРКОВКА<input type="checkbox" name="ПАРКОВКА"></label>
+	      <label>WI-FI<input type="checkbox" name="WI-FI"></label>
+	      </form>
+	     <form class="select-feature_house">
 	      <h2>ТИП ЖИЛЬЯ</h2>
-	      <input type="checkbox" name="ГОСТИНИЦА">
-	      <input type="checkbox" name="МОТЕЛЬ">
-	      <input type="checkbox" name="АПАРТАМЕНТЫ">
+		  <label>ГОСТИНИЦА<input type="checkbox" name="ГОСТИНИЦА"></label>
+		  <label>МОТЕЛЬ<input type="checkbox" name="МОТЕЛЬ"></label>
+          <label>АПАРТАМЕНТЫ<input type="checkbox" name="АПАРТАМЕНТЫ"></label>
 	     </form>
-	     <form>
+	     <form class="select-feature_price">
 	     	<h2>Стоимость в сутки (Р):</h2>
 	     	<input type="range" name="Стоимость в сутки (Р):" min="0" max="100000" step="500">
 	     	<input type="button" name="ПОКАЗАТЬ">
@@ -50,3 +51,21 @@
           </form>
 		</section>
 	</main>
+	<footer>
+    <!--социальные кнопки и производитель-->
+    <div>
+        <p class="hashtag"><b>#VISITSEDONA</b></p>
+        <p>
+            <ul>
+                <li><a class="social-button" href="#">Twitter</a></li>
+                <li><a class="social-button" href="#">Facebook</a></li>
+                <li><a class="social-button" href="#">YouTube</a></li>
+            </ul>
+        </p>
+        <p class="footer-copyright">
+            <b>Website by:</b>
+            <a class="button" href="https://htmlacademy.ru">HTML Academy</a></p>
+        </div>
+    </footer>
+    </body>
+</html>

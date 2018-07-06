@@ -251,7 +251,20 @@ h4.advantage-item-title {
 .advantage-item_small_background {
     background-color: #eeeeee;
 }
-
+.select-feature {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.select-feature_garth {
+    display: flex;
+    flex-direction: column;
+}
+.select-feature_house {
+    display: flex;
+    flex-direction: column;
+}
+/*_________________________________________*/
 .reservation {
     text-align: center;
     padding-top: 48px;
@@ -314,4 +327,8 @@ h4.advantage-item-title {
 ul li em {
     width: 256px;
     height: 256px;
+}
+
+.reservation-form {
+    display: hide;
 }
