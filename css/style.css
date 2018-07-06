@@ -265,8 +265,8 @@ h4.advantage-item-title {
     flex-direction: column;
 }
 .background-feature {
-    background-image: url('img/filter-background.png');
-    width: 100%
+    background-image: url('../img/filter-background.png');
+    width: 100%;
 }
 /*_________________________________________*/
 .reservation {
