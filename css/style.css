@@ -291,7 +291,7 @@ h4.advantage-item-title {
 }
 .result-item_title {
     font-size: 21px;
-    line-height: 1.23;
+    line-height: 1.24;
     margin: 0 0 10px;
     color: #000; 
 }
@@ -339,6 +339,21 @@ h4.advantage-item-title {
    text-align: center;
    padding: 0 16px;
    background-color: #f2f2f2;
+}
+.footer-elements, .social-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-button_back {
+    width: 48px;
+    height: 46px;
+    background-color: #81b3d2;
+    margin: 3px;
+}
+.social-button_back img {
+    width: 0 auto;
 }
 /*_________________________________________*/
 .reservation {
