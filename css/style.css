@@ -251,23 +251,24 @@ h4.advantage-item-title {
 .advantage-item_small_background {
     background-color: #eeeeee;
 }
-/*
+
+
 .select-feature {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+  width: 100%;
+  height: 218px;  
 }
-*/
 .select-feature-flex {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 
 }
 .select-feature-flex div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+
 }
 .select-feature-flex:nth-child(3) {
     margin-right: 345px;
@@ -276,9 +277,24 @@ h4.advantage-item-title {
     display: flex;
     flex-direction: column;
 }
+
 .background-feature {
     background-image: url('../img/filter-background.png');
     width: 100%;
+}
+.sort-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sort-form ul {
+    display: flex;
+    align-items: center;
+}
+.pict-up-down {
+    display: flex;
+    justify-content: flex-start;
 }
 .result-item {
     display: flex;
@@ -352,27 +368,29 @@ h4.advantage-item-title {
    padding: 0 16px;
    background-color: #f2f2f2;
 }
+/*Футер страницы */
 .footer-elements, .social-button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-/*
+
 .social-button_back {
     width: 48px;
     height: 46px;
     background-color: #81b3d2;
     margin: 3px;
+    background-position: 50% 50%; 
 }
-*/
+
 .social-button_back img {
-    border: 5px solid #81b3d2;
+    
     background-color: #81b3d2;
-    background-size: 48px 46px;
-    background-origin: content-box;
+    background-origin: padding-box;
     margin: 3px;
 }
+
 /*_________________________________________*/
 .reservation {
     text-align: center;
