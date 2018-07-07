@@ -22,22 +22,23 @@
 	<main>
 		<!--тут нужно сделать таблицу с чекбоксами, или же список с чекбоксами или же абзац с чекбоксами, я не знаю как-->
 		<section class="select-feature background-feature">
-		 <form class="select-feature_garth">
-		  <h2>ИНФРАСТУКТУРА</h2>
+		 <form class="select-feature-flex">
+		  <div><h2>ИНФРАСТУКТУРА</h2>
 		  <label>БАССЕЙН<input type="checkbox" name="БАССЕЙН"></label>
 	      <label>ПАРКОВКА<input type="checkbox" name="ПАРКОВКА"></label>
 	      <label>WI-FI<input type="checkbox" name="WI-FI"></label>
-	      </form>
-	     <form class="select-feature_house">
+	      </div>
+	      <div>
 	      <h2>ТИП ЖИЛЬЯ</h2>
 		  <label>ГОСТИНИЦА<input type="checkbox" name="ГОСТИНИЦА"></label>
 		  <label>МОТЕЛЬ<input type="checkbox" name="МОТЕЛЬ"></label>
           <label>АПАРТАМЕНТЫ<input type="checkbox" name="АПАРТАМЕНТЫ"></label>
-	     </form>
-	     <form class="select-feature_price">
-	     	<h2>Стоимость в сутки (Р):</h2>
+          </div>
+          <div>
+	  	  <h2>Стоимость в сутки (Р):</h2>
 	     	<input type="range" name="Стоимость в сутки (Р):" min="0" max="100000" step="500">
 	     	<input type="button" name="ПОКАЗАТЬ">
+	     	</div>
 	     </form>
 		</section>
 		<!--ниже таблица с выводам запроса пользователя-->

@@ -251,14 +251,26 @@ h4.advantage-item-title {
 .advantage-item_small_background {
     background-color: #eeeeee;
 }
+/*
 .select-feature {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
-.select-feature_garth {
+*/
+.select-feature-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.select-feature-flex div {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+.select-feature-flex:nth-child(3) {
+    margin-right: 345px;
 }
 .select-feature_house {
     display: flex;
