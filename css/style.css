@@ -268,6 +268,78 @@ h4.advantage-item-title {
     background-image: url('../img/filter-background.png');
     width: 100%;
 }
+.result-item {
+    display: flex;
+    padding: 30px 73px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.result-item-rating {
+    margin-left: auto;
+}
+.result-item-rating {
+    align-items: flex-end;
+}
+.result-item__img {
+    margin-right: 30px;
+}
+
+.result-item-info, .result-item-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.result-item_title {
+    font-size: 21px;
+    line-height: 1.23;
+    margin: 0 0 10px;
+    color: #000; 
+}
+.result-info-row {
+    margin: 0;
+}
+.result-info-text {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.result-btn {
+    display: inline-block;
+   color: #ffffff;
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 14px;
+   height: 27px;
+   line-height: 27px;
+   text-align: center;
+   padding: 0 16px;
+}
+.result-more{
+    background-color: #81b3d2;
+    margin-right: 6px;
+}
+.result-book{
+    background-color: #766357;
+}
+.result-item_type{
+    margin-right: 38px;
+}
+.result-stars {
+    margin: 0px;
+}
+.result-rating-value{
+    display: inline-block;
+   color: #666666;
+   text-transform: uppercase;
+   font-weight: 300;
+   font-size: 14px;
+   height: 27px;
+   line-height: 27px;
+   text-align: center;
+   padding: 0 16px;
+   background-color: #f2f2f2;
+}
 /*_________________________________________*/
 .reservation {
     text-align: center;

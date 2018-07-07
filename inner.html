@@ -3,7 +3,9 @@
   <head>
      <title>Sedona</title>
      <meta charset="utf-8">
+     <link href='css/normalize.css' rel='stylesheet'>
      <link href='css/style.css' rel='stylesheet'>
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   </head>
   <body>
 	<header class='main-header'>
@@ -40,15 +42,87 @@
 		</section>
 		<!--ниже таблица с выводам запроса пользователя-->
 
-		<section>
-		  <form>
+		<section class="result">
+		  <div class="sort">
+           <form class="sort-form">
+           <h4>СОРТИРОВКА:</h4>
            <ul>
-           	<li>СОРТИРОВКА:</li>
            	<li><button type="button">По цене</button></li>
            	<li><button type="button">По типу</button></li>
            	<li><button type="button">По рейтингу</button></li>
            </ul>
           </form>
+          </div>
+          <div class="result-block">
+          	<ul class="result-list">
+          		<li class="result-item">
+          			<img class="result-item__img" src="img/layer-21.png" alt="">
+          			<div class="result-item-info">
+          			<h2 class="result-item_title"> <a href="#">Amara Resort & Spa</a></h2>
+          			<p class="result-info-row">
+          				<span class="result-item_type result-info-text">Гостиница</span>
+          				<span class="result-item-price result-info-text">От 4000 Р.</span>
+          			</p>
+          			<p class="result-info-row">
+          				<a href="#" class="result-btn result-more">Подробнее</a> 
+          				<a href="#" class="result-btn result-book">Заброниовать</a> 
+          			</p>
+          			</div>
+          			<div class="result-item-rating">
+          				<p class="result-stars">
+          					<img src="img/star.png" alt="">
+          					 <img src="img/star.png" alt="">
+          					 <img src="img/star.png" alt="">
+          					 <img src="img/star.png" alt=""> </p>
+          				<span class="result-rating-value">Рейтинг: 8,5</span>
+          			</div>
+          		</li>
+          		<li class="result-item">
+          			<img class="result-item__img" src="img/layer-21.png" alt="">
+          			<div class="result-item-info">
+          			<h2 class="result-item_title"> <a href="#">Amara Resort & Spa</a></h2>
+          			<p class="result-info-row">
+          				<span class="result-item_type result-info-text">Гостиница</span>
+          				<span class="result-item-price result-info-text">От 4000 Р.</span>
+          			</p>
+          			<p class="result-info-row">
+          				<a href="#" class="result-btn result-more">Подробнее</a> 
+          				<a href="#" class="result-btn result-book">Заброниовать</a> 
+          			</p>
+          			</div>
+          			<div class="result-item-rating">
+          				<p class="result-stars">
+          					<img src="img/star.png" alt="">
+          					 <img src="img/star.png" alt="">
+          					 <img src="img/star.png" alt="">
+          					 <img src="img/star.png" alt=""> </p>
+          				<span class="result-rating-value">Рейтинг: 8,5</span>
+          			</div>
+          		</li>
+          		<li class="result-item">
+          			<img class="result-item__img" src="img/layer-21.png" alt="">
+          			<div class="result-item-info">
+          			<h2 class="result-item_title"> <a href="#">Amara Resort & Spa</a></h2>
+          			<p class="result-info-row">
+          				<span class="result-item_type result-info-text">Гостиница</span>
+          				<span class="result-item-price result-info-text">От 4000 Р.</span>
+          			</p>
+          			<p class="result-info-row">
+          				<a href="#" class="result-btn result-more">Подробнее</a> 
+          				<a href="#" class="result-btn result-book">Заброниовать</a> 
+          			</p>
+          			</div>
+          			<div class="result-item-rating">
+          				<p class="result-stars">
+          					<img src="img/star.png" alt="">
+          					 <img src="img/star.png" alt="">
+          					 <img src="img/star.png" alt="">
+          					 <img src="img/star.png" alt=""> </p>
+          				<span class="result-rating-value">Рейтинг: 8,5</span>
+          			</div>
+          		</li>
+          	</ul>
+          </div>
 		</section>
 	</main>
 	<footer>
