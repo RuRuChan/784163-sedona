@@ -346,14 +346,18 @@ h4.advantage-item-title {
     justify-content: space-around;
     align-items: center;
 }
+/*
 .social-button_back {
     width: 48px;
     height: 46px;
     background-color: #81b3d2;
     margin: 3px;
 }
+*/
 .social-button_back img {
-    width: 0 auto;
+    
+    background-color: #81b3d2;
+    background-size: 48px 46px;
 }
 /*_________________________________________*/
 .reservation {
