@@ -389,6 +389,12 @@ h4.advantage-item-title {
     margin: 0 0 10px;
     color: #000; 
 }
+.result-item_title:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+.result-item_title:hover, .result-item_title:focus {
+    color: #81b3d2;
+}
 .result-info-row {
     margin: 0;
 }
