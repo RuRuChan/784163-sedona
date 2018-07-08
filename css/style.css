@@ -55,6 +55,21 @@ input[type="radio"].visually-hidden {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+input[type='checkbox'] {
+    display: none;
+}
+
+
+
+.checkmark::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 21px;
+    height: 21px;
+    border: 2px solid white; 
+    border-radius: 5px;
+}
 
 .main-navigation ul {
     list-style: none;
@@ -255,20 +270,29 @@ h4.advantage-item-title {
 
 .select-feature {
   width: 100%;
-  height: 218px;  
+  height: 218px;
+    color: #fff;
 }
 .select-feature-flex {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 
+    padding: 30px 73px;
 }
-.select-feature-flex div {
+.select-feature-flex>div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
+}
+.house-wrapper, .structure-wrapper {
+    width: 239px;
+}
+.range-wrapper {
+    position: relative;
+    margin-left: 333px;
+    padding-top: 26px;
 }
 .select-feature-flex:nth-child(3) {
     margin-right: 345px;
@@ -281,6 +305,12 @@ h4.advantage-item-title {
 .background-feature {
     background-image: url('../img/filter-background.png');
     width: 100%;
+    background-position: center;
+}
+.sort{
+    padding: 30px 73px;
+    border-bottom: 1px solid #e5e5e5;
+    text-transform: uppercase;
 }
 .sort-form {
     display: flex;
@@ -291,6 +321,35 @@ h4.advantage-item-title {
 .sort-form ul {
     display: flex;
     align-items: center;
+}
+.results-count {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000;
+    margin-right: 50px;
+}
+.sorting{
+    margin-right: 40px;
+}
+.sort-params li {
+    margin-right: 33px;
+}
+.params-btn{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba(0,0,0,.3);
+    cursor: pointer;
+    display: block;
+    border: none;
+    text-transform: uppercase;
+}
+.params-btn.active{
+    color: #81b3d2;
+}
+.order{
+    margin-left: auto;
 }
 .pict-up-down {
     display: flex;
@@ -457,5 +516,108 @@ ul li em {
 }
 
 .reservation-form {
-    display: hide;
+    display: none;
+}
+
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-hotels a {
+    height: 48px;
+}
+
+.footer-copyright {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 102px;
+    padding-right: 98px;
+    width: 400px;
+}
+
+.website {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    display: block;
+    margin-top: 47px;
+    margin-right: 8px;
+}
+
+.footer-copyright a {
+    width: 115px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 38px;
+    margin-bottom: 40px;
+    background-image: url(../img/logo-name.png);
+    background-repeat: no-repeat;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+    background-image: url(../img/logo-name-hover.png);
+}
+
+.footer-copyright a:active {
+    background-image: url(../img/logo-name-active.png);
+}
+
+.footer-copyright img {
+    display: block;
+    margin-right: 101px;
+}
+
+.social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: 36px 0 0;
+}
+.social li {
+    width: 46px;
+    height: 48px;
+    margin-right: 6px;
+    text-align: center;
+    background-color: #81b3d2;
+    display: inline-block;
+    vertical-align: middle;
+}
+.social li:last-child {
+    margin: 0;
+}
+.social a {
+    display: flex;
+    height: 48px;
+}
+
+.tag {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 400px;
+}
+
+.sedona-tag {
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 46px;
+    margin-bottom: 48px;
+    text-align: center;
 }
