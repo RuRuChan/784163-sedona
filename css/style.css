@@ -342,6 +342,7 @@ input:checked + .checkmark::before {
 .sucks-line {
     padding-top: 53px;
     padding-bottom: 13px;
+    
 }
 
 .reasons {
