@@ -58,9 +58,6 @@ input[type="radio"].visually-hidden {
 input[type='checkbox'] {
     display: none;
 }
-
-
-
 .checkmark::before {
     content: "";
     display: block;
@@ -69,8 +66,18 @@ input[type='checkbox'] {
     height: 21px;
     border: 2px solid white; 
     border-radius: 5px;
+     
 }
-
+input[checked]  .checkmark::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 21px;
+    height: 21px;
+    border: 2px solid white; 
+    border-radius: 5px;
+    background-image: url(../img/checkbox-on.png); 
+}
 .main-navigation ul {
     list-style: none;
     display: -webkit-box;
