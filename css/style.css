@@ -399,7 +399,7 @@ h4.advantage-item-title {
     text-transform: uppercase;
 }
 .result-btn {
-    display: inline-block;
+display: inline-block;
    color: #ffffff;
    text-transform: uppercase;
    font-weight: 600;
@@ -409,13 +409,28 @@ h4.advantage-item-title {
    text-align: center;
    padding: 0 16px;
 }
+
 .result-more{
     background-color: #81b3d2;
     margin-right: 6px;
 }
+.result-more:hover, .result-more:focus {
+   background-color: #669ec0;;
+}
+.result-more:active {
+    background-color: #5496bd;
+}
 .result-book{
     background-color: #766357;
 }
+.result-book:hover, .result-book:focus {
+    background-color: #604e43;
+}
+
+.result-book:active {
+    background-color: #503e33;
+}
+
 .result-item_type{
     margin-right: 38px;
 }
