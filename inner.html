@@ -1,63 +1,181 @@
 <!DOCTYPE HTML>
 <html lang="ru">
-  <head>
-     <title>Sedona</title>
-     <meta charset="utf-8">
-  </head>
-  <body>
-	<header>
-	 	<nav>
-	  	  <ul>
-	  	  	<li><a href="1">информация</a></li>
-	  	  	<li><a href="2">фото и видео</a></li>
-	  	  	<li><a href="3">карта штата</a></li>
-	  	  	<li><a href="4">гостиницы</a></li>
-	  	  </ul>
-	  	</nav>
-	  	<img src="\cityofsedona.jpg">
-	</header>
-	<main>
-		<!--тут нужно сделать таблицу с чекбоксами, или же список с чекбоксами или же абзац с чекбоксами, я не знаю как-->
-		<section>
-		 <form>
-		  <h2>ИНФРАСТУКТУРА</h2>
-	      <input type="checkbox" name="БАССЕЙН">
-	      <input type="checkbox" name="ПАРКОВКА">
-	      <input type="checkbox" name="WI-FI">
-	     </form>
-	     <form>
-	      <h2>ТИП ЖИЛЬЯ</h2>
-	      <input type="checkbox" name="ГОСТИНИЦА">
-	      <input type="checkbox" name="МОТЕЛЬ">
-	      <input type="checkbox" name="АПАРТАМЕНТЫ">
-	     </form>
-	     <form>
-	     	<h2>Стоимость в сутки (Р):</h2>
-	     	<input type="range" name="Стоимость в сутки (Р):" min="0" max="100000" step="500">
-	     	<input type="button" name="ПОКАЗАТЬ">
-	     </form>
-		</section>
-		<!--ниже таблица с выводам запроса пользователя-->
+<head>
+    <title>Sedona</title>
+    <meta charset="utf-8">
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+<header class='main-header'>
+    <nav class='main-navigation'>
+        <ul>
+            <li><a href="1">информация</a></li>
+            <li><a href="2">фото и видео</a></li>
+            <li><a href="3">карта штата</a></li>
+            <li><a href="4">гостиницы</a></li>
+        </ul>
+    </nav>
+    <a href="index.html"><img class='sed-logo' src="img/sed-logo.png"></a>
+</header>
+<main>
+    <section class="select-feature background-feature">
+        <form class="select-feature-flex">
+            <div class="structure-wrapper"><h2>ИНФРАСТУКТУРА</h2>
+                <label>БАССЕЙН<input type="checkbox" name="БАССЕЙН">
+                              <span class="checkmark checkshow"></span></label>
+                <label>ПАРКОВКА<input type="checkbox" name="ПАРКОВКА">
+                               <span class="checkmark checkshow"></span></label>
+                <label>WI-FI<input type="checkbox" name="WI-FI">
+                            <span class="checkmark checkshow"></span></label>
+            </div>
+            <div class="house-wrapper   ">
+                <h2>ТИП ЖИЛЬЯ</h2>
+                <label>ГОСТИНИЦА<input type="checkbox" name="ГОСТИНИЦА"><span class="checkmark checkshow"></span></label>
+                <label>МОТЕЛЬ<input type="checkbox" name="МОТЕЛЬ"><span class="checkmark checkshow"></span></label>
+                <label>АПАРТАМЕНТЫ<input type="checkbox" name="АПАРТАМЕНТЫ"><span class="checkmark checkshow"></span></label>
+            </div>
+            <div class="range-wrapper">
+                <div class='filter-range'>
+                    <div class='filter-range-title'>Стоимость в сутки (р):</div>
+                    <div class='price-controls'>
+                        <label class='min-price'>от <input type='text' name='min-price' value='0'></label>
+                        <label class='max-price'>до <input type='text' name='max-price' value='3000'></label>
+                    </div>
+                    <div class='range-controls'>
+                        <div class='scale'>
+                            <div class='bar'></div>
+                        </div>
+                        <div class='range-toggle range-toggle-min'></div>
+                        <div class='range-toggle range-toggle-max'></div>
+                    </div>
+                </div>
+                <button class='btn-transparent' type='submit'>Показать</button>
+            </div>
+        </form>
+    </section>
+    <!--ниже таблица с выводам запроса пользователя-->
 
-		<section>
-		  <form>
-           <ul>
-           	<li>СОРТИРОВКА:</li>
-           	<li><button type="button">По цене</button></li>
-           	<li><button type="button">По типу</button></li>
-           	<li><button type="button">По рейтингу</button></li>
-           </ul>
-          </form>
-			 <table>
-			 	<tr><td class="housing-img"><img src="#"></td></tr>
-				<tr><td class="housing-name"><!--название жилища--></td></tr>
-				<tr><td class="housing-type"><!--тип жилища--></td></tr>
-				<tr><td class="housing-price"><!--цена жилища--></td></tr>
-				<tr><td class="housing-raiting">РЕЙТИНГ</td></tr>
-			 </table>
-			 <form>
-				<button name="detailed" type="button">ПОДРОБНЕЕ</button>
-				<button name="resorved" type="button">ЗАБРОНИРОВАТЬ</button>
-			 </form>
-		</section>
-	</main>
+    <section class="result">
+        <div class="sort">
+            <div class="sort-form">
+                <h3 class="results-count">Найдено: 3</h3>
+                <span class="sorting">СОРТИРОВКА:</span>
+                <ul class="sort-params">
+                    <li>
+                        <button type="button" class="params-btn active">По цене</button>
+                    </li>
+                    <li>
+                        <button type="button" class="params-btn">По типу</button>
+                    </li>
+                    <li>
+                        <button type="button" class="params-btn">По рейтингу</button>
+                    </li>
+                </ul>
+                <div class="order">
+                    <img src="img/icon-up-dir.png">
+                    <img src="img/icon-down-dir.png">
+                </div>
+            </div>
+        </div>
+        <div class="result-block">
+            <ul class="result-list">
+                <li class="result-item">
+                    <img class="result-item__img" src="img/layer-21.png" alt="">
+                    <div class="result-item-info">
+                        <h2 class="result-item_title"><a href="#">Amara Resort & Spa</a></h2>
+                        <p class="result-info-row">
+                            <span class="result-item_type result-info-text">Гостиница</span>
+                            <span class="result-item-price result-info-text">От 4000 Р.</span>
+                        </p>
+                        <p class="result-info-row">
+                            <a href="#" class="result-btn result-more">Подробнее</a>
+                            <a href="#" class="result-btn result-book">Забронировать</a>
+                        </p>
+                    </div>
+                    <div class="result-item-rating">
+                        <p class="result-stars">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt=""></p>
+                        <span class="result-rating-value">Рейтинг: 8,5</span>
+                    </div>
+                </li>
+                <li class="result-item">
+                    <img class="result-item__img" src="img/layer-89-copy.png" alt="">
+                    <div class="result-item-info">
+                        <h2 class="result-item_title"><a href="#">Desert Quail Inn</a></h2>
+                        <p class="result-info-row">
+                            <span class="result-item_type result-info-text">Мотель</span>
+                            <span class="result-item-price result-info-text">От 3000 Р.</span>
+                        </p>
+                        <p class="result-info-row">
+                            <a href="#" class="result-btn result-more">Подробнее</a>
+                            <a href="#" class="result-btn result-book">Заброниовать</a>
+                        </p>
+                    </div>
+                    <div class="result-item-rating">
+                        <p class="result-stars">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </p>
+                        <span class="result-rating-value">Рейтинг: 8,9</span>
+                    </div>
+                </li>
+                <li class="result-item">
+                    <img class="result-item__img" src="img/layer-22.png" alt="">
+                    <div class="result-item-info">
+                        <h2 class="result-item_title"><a href="#">Villas at Poco Diablo</a></h2>
+                        <p class="result-info-row">
+                            <span class="result-item_type result-info-text">Апартаменты</span>
+                            <span class="result-item-price result-info-text">От 2000 Р.</span>
+                        </p>
+                        <p class="result-info-row">
+                            <a href="#" class="result-btn result-more">Подробнее</a>
+                            <a href="#" class="result-btn result-book">Заброниовать</a>
+                        </p>
+                    </div>
+                    <div class="result-item-rating">
+                        <p class="result-stars">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </p>
+                        <span class="result-rating-value">Рейтинг: 9,2</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class='tag'><a class='sedona-tag' href='#'>#visitsedona</a></div>
+    <ul class='social'>
+        <li>
+            <a class='social-button' href='#'>
+                <img class='twitter' src='img/t.png' width='17' height='15' alt='twitter'>
+                <span class='visually-hidden'>twitter</span>
+            </a>
+        </li>
+        <li>
+            <a class='social-button' href='#'>
+                <img class='facebook' src='img/fb-icon.png' width='12' height='22' alt='facebook'>
+                <span class='visually-hidden'>facebook</span>
+            </a>
+        </li>
+        <li>
+            <a class='social-button' href='#'>
+                <img class='youtube' src='img/youtube.png' width='20' height='16' alt='youtube'>
+                <span class='visually-hidden'>youtube</span>
+            </a>
+        </li>
+    </ul>
+    <p class='footer-copyright'>
+        <span class='website'>Website by</span>
+        <a href='https://htmlacademy.ru/intensive/htmlcss'></a>
+    </p>
+</footer>
+</body>
+</html>
